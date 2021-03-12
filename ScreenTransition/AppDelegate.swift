@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // アプリケーションのwindowをインスタンス化
     var window: UIWindow?
     
-    // アプリの起動時に呼ばれる。よくわからんが初期化処理などを書く？
+    // アプリの起動時に呼ばれる。
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let window = UIWindow(frame: UIScreen.main.bounds) // windowのサイズ。複数窓開く訳ではないので全画面
