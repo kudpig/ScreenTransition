@@ -80,8 +80,8 @@
 		8F5A054B25FC915600AD87CE /* Second */ = {
 			isa = PBXGroup;
 			children = (
-				8F5A054C25FC91BA00AD87CE /* Second.storyboard */,
 				8F5A054F25FC91CE00AD87CE /* SecondViewController.swift */,
+				8F5A054C25FC91BA00AD87CE /* Second.storyboard */,
 			);
 			path = Second;
 			sourceTree = "<group>";
