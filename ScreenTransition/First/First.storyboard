@@ -16,8 +16,23 @@
                     <view key="view" contentMode="scaleToFill" id="Unk-NL-XEB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eeq-jO-pSJ">
+                                <rect key="frame" x="164" y="424" width="86" height="48"/>
+                                <color key="backgroundColor" red="0.2274509804" green="0.66666666669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tapGoSecond:" destination="AaK-Ec-NSR" eventType="touchUpInside" id="tHd-4u-VaC"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="xOb-OQ-x2H"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="Eeq-jO-pSJ" firstAttribute="centerX" secondItem="Unk-NL-XEB" secondAttribute="centerX" id="75C-cp-QPy"/>
+                            <constraint firstItem="Eeq-jO-pSJ" firstAttribute="centerY" secondItem="Unk-NL-XEB" secondAttribute="centerY" id="ajU-YE-gRI"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O2d-0i-B4m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
