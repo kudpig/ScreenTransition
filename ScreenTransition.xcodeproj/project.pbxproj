@@ -94,8 +94,8 @@
 		8F5A055925FD1AED00AD87CE /* Third */ = {
 			isa = PBXGroup;
 			children = (
-				8F5A055A25FD1B1C00AD87CE /* Third.storyboard */,
 				8F5A055D25FD1B3100AD87CE /* ThirdViewController.swift */,
+				8F5A055A25FD1B1C00AD87CE /* Third.storyboard */,
 			);
 			path = Third;
 			sourceTree = "<group>";

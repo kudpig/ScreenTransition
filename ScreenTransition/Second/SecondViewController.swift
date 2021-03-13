@@ -12,18 +12,15 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func tapGoThird(_ sender: UIButton) {
+        let thirdStoryboard = UIStoryboard(name: "Third", bundle: nil)
+        let thirdVC = thirdStoryboard.instantiateInitialViewController() as! ThirdViewController
+        
+        let nav = self.navigationController
+        nav?.pushViewController(thirdVC, animated: true)
     }
-    */
-
+    
 }

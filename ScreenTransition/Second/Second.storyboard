@@ -16,8 +16,23 @@
                     <view key="view" contentMode="scaleToFill" id="B58-ff-1ex">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XE5-hm-VV5">
+                                <rect key="frame" x="164" y="424" width="86" height="48"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.66666666669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tapGoThird:" destination="dQj-Oc-Mbq" eventType="touchUpInside" id="F8F-mf-zCH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="g42-Fx-ZpF"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="XE5-hm-VV5" firstAttribute="centerX" secondItem="B58-ff-1ex" secondAttribute="centerX" id="jgw-M0-83e"/>
+                            <constraint firstItem="XE5-hm-VV5" firstAttribute="centerY" secondItem="B58-ff-1ex" secondAttribute="centerY" id="vr1-MO-oVa"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="llj-fO-Mpb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
