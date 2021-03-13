@@ -21,6 +21,8 @@ class FirstViewController: UIViewController {
         
         let nav = self.navigationController
         nav?.pushViewController(secondVC, animated: true)
+        //TODO
+        // navがない場合のために、navをアンラップしfirstVC.present(secondVC)という条件分岐もつける。
     }
     
 }
