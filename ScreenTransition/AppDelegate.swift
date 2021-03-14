@@ -21,15 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds) // windowのサイズ。複数窓開く訳ではないので全画面
         self.window = window // AppDelegateクラスにて定義した変数windowに、関数内で作成したwindowを代入
         
-        // 最初のstoryboardを取得
-        let firststoryboard = UIStoryboard(name: "First", bundle: nil)
-        // storyboardから最初のViewControllerを取得
-        // instantiateInitialViewControllerはSBクラスのメソッドで、「is initial view controller」が設定されている ViewController を取得できる
-        let firstVC = firststoryboard.instantiateInitialViewController() as! FirstViewController
-        // ナビゲーションコントローラーを定義。引数で最下層のページを指定
-        let nav = UINavigationController(rootViewController: firstVC)
-        window.rootViewController = nav
-        window.makeKeyAndVisible()
+        // Routerで起動時のViewを取得する
+        Router.showRoot(window: window)
         
         return true
     }
