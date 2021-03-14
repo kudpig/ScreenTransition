@@ -8,21 +8,9 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-
     
     @IBAction func tapGoSecond(_ sender: UIButton) {
-        let secondStoryboard = UIStoryboard(name: "Second", bundle: nil)
-        let secondVC = secondStoryboard.instantiateInitialViewController() as! SecondViewController
-        
-        let nav = self.navigationController
-        nav?.pushViewController(secondVC, animated: true)
-        //TODO
-        // navがない場合のために、navをアンラップしfirstVC.present(secondVC)という条件分岐もつける。
+        Router.showSecond(fromVC: self)
     }
     
 }
