@@ -17,10 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // アプリの起動時に呼ばれる。
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+        // ２行でウィンドウをインスタンス化する
         let window = UIWindow(frame: UIScreen.main.bounds) // windowのサイズ。複数窓開く訳ではないので全画面
-        self.window = window // AppDelegateクラスにて定義した変数windowに、関数内で作成したwindowを代入
-        
+        self.window = window 
         // Routerで起動時のViewを取得する
         Router.showRoot(window: window)
         

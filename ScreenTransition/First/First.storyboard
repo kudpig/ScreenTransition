@@ -18,9 +18,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eeq-jO-pSJ">
-                                <rect key="frame" x="164" y="424" width="86" height="48"/>
+                                <rect key="frame" x="150" y="418" width="114" height="60"/>
                                 <color key="backgroundColor" red="0.2274509804" green="0.66666666669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="tapGoSecond:" destination="AaK-Ec-NSR" eventType="touchUpInside" id="tHd-4u-VaC"/>

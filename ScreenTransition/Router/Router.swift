@@ -24,27 +24,24 @@ final class Router {
     static func showSecond(fromVC: UIViewController) {
         let secondStoryboard = UIStoryboard(name: "Second", bundle: nil)
         let secondVC = secondStoryboard.instantiateInitialViewController() as! SecondViewController
-        //navをアンラップ
-        if let nav = fromVC.navigationController {
-            nav.pushViewController(secondVC, animated: true)
-        } else {
-            fromVC.present(secondVC, animated: true, completion: nil)
-        }
         
+        show(fromVC: fromVC, nextVC: secondVC)
     }
     
     static func showThird(fromVC: UIViewController) {
         let thirdStoryboard = UIStoryboard(name: "Third", bundle: nil)
         let thirdVC = thirdStoryboard.instantiateInitialViewController() as! ThirdViewController
-        //navをアンラップ
-        if let nav = fromVC.navigationController {
-            nav.pushViewController(thirdVC, animated: true)
-        } else {
-            fromVC.present(thirdVC, animated: true, completion: nil)
-        }
         
+        show(fromVC: fromVC, nextVC: thirdVC)
     }
     
+    private static func show(fromVC: UIViewController, nextVC: UIViewController) {
+        if let nav = fromVC.navigationController {
+            nav.pushViewController(nextVC, animated: true)
+        } else {
+            fromVC.present(nextVC, animated: true, completion: nil)
+        }
+    }
     
     
 }
