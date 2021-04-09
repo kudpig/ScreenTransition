@@ -1,5 +1,7 @@
 # ScreenTransition
-画面遷移のコードをRouterクラスに切り離す
+画面遷移のコードをRouterクラスに切り離す<br>
+Qiita記事も詳しい内容書いた
+[[Swift] 画面遷移をコードで記述する](https://qiita.com/kudpig/items/954f849c620ff723b950)
 
 ## なぜ
 画面遷移に関わるコードをRouterクラスに切り離した。
